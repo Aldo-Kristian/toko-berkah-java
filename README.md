@@ -29,7 +29,8 @@ Kotlin-first. The REST/SQLite role is unchanged.
 
 ## Requirements
 
-- JDK 21 (the repo pins `temurin-21` in `.prototools`).
+- JDK 21 (the repo pins `temurin-21` in `.prototools`). If it is missing, Gradle downloads
+  Temurin 21 automatically through the Foojay resolver on the first sync (network required).
 - Android Studio (latest stable) with Android SDK 37.
 - An emulator or a USB-connected Android device.
 - Optional, if you use [Proto](https://moonrepo.dev/proto): `proto install` in this directory.
@@ -150,6 +151,9 @@ Suggested split for the six features:
   `application.properties` and `apiBaseUrl` to match.
 - **App shows 404/connection error:** confirm the API is running and the URL matches the
   target (emulator vs device) as described above.
-- **Gradle sync uses the wrong JDK:** set Gradle JDK to 21 in Android Studio.
+- **Gradle sync uses the wrong JDK / “Project source sets cannot be resolved”:** the project
+  requests a Java 21 toolchain. The Foojay resolver downloads Temurin 21 automatically on sync;
+  make sure the machine is online for the first sync. Alternatively set *Gradle JDK* to 21 in
+  Android Studio.
 - **Physical device cannot connect:** run `adb reverse tcp:8080 tcp:8080` again after
   reconnecting the cable.
