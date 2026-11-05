@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Toko Sembako</string>
+  <string name="scaffold_title">Toko Sembako Berkah Jaya</string>
+  <string name="scaffold_hint">Scaffold proyek. Fitur dashboard, produk, kategori, supplier, pencarian, dan peringatan stok akan diimplementasikan oleh tim.</string>
+</resources>

@@ -1,0 +1,49 @@
+[versions]
+agp = "9.4.0"
+core = "1.19.1"
+activity = "1.13.0"
+fragment = "1.9.1"
+lifecycle = "2.11.0"
+navigation = "2.10.2"
+appcompat = "1.8.0"
+recyclerview = "1.4.0"
+constraintlayout = "2.2.2"
+material = "1.14.0"
+swiperefresh = "1.2.0"
+retrofit = "3.0.0"
+gson = "2.15.0"
+okhttp = "4.12.0"
+junit = "4.13.2"
+springBoot = "4.1.2"
+sqlite = "3.54.1.0"
+
+[libraries]
+core = { group = "androidx.core", name = "core", version.ref = "core" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+fragment = { group = "androidx.fragment", name = "fragment", version.ref = "fragment" }
+lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "lifecycle" }
+lifecycle-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata", version.ref = "lifecycle" }
+lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime", version.ref = "lifecycle" }
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigation" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigation" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+swiperefreshlayout = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swiperefresh" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+spring-boot-dependencies = { group = "org.springframework.boot", name = "spring-boot-dependencies", version.ref = "springBoot" }
+spring-boot-starter-web = { group = "org.springframework.boot", name = "spring-boot-starter-web" }
+spring-boot-starter-jdbc = { group = "org.springframework.boot", name = "spring-boot-starter-jdbc" }
+spring-boot-starter-actuator = { group = "org.springframework.boot", name = "spring-boot-starter-actuator" }
+spring-boot-starter-validation = { group = "org.springframework.boot", name = "spring-boot-starter-validation" }
+spring-boot-starter-test = { group = "org.springframework.boot", name = "spring-boot-starter-test" }
+sqlite-jdbc = { group = "org.xerial", name = "sqlite-jdbc", version.ref = "sqlite" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+spring-boot = { id = "org.springframework.boot", version.ref = "springBoot" }

@@ -1,0 +1,19 @@
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+.DS_Store
+*.apk
+*.aab
+*.jks
+*.keystore
+.cxx/
+captures/
+.externalNativeBuild/
+
+# SQLite databases created by the API server
+sembakoapi/*.db
+sembakoapi/*.db-journal
+sembakoapi/*.db-wal
+sembakoapi/*.db-shm
