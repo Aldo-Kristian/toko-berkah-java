@@ -1,9 +1,7 @@
 package com.example.sembakoapp;
 
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.sembakoapp.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
