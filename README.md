@@ -104,6 +104,30 @@ adb reverse tcp:8080 tcp:8080
 
 `BuildConfig.API_BASE_URL` is generated from this value.
 
+### Remote API mode
+
+By default the app uses the in-memory fake repository, so the full UI works
+without `sembakoapi`. To exercise the Retrofit path once the API is running:
+
+```bash
+./gradlew :sembakoapp:installDebug \
+  -PuseRemoteApi=true \
+  -PapiBaseUrl=http://10.0.2.2:8080/
+```
+
+For a USB phone:
+
+```bash
+adb reverse tcp:8080 tcp:8080
+./gradlew :sembakoapp:installDebug \
+  -PuseRemoteApi=true \
+  -PapiBaseUrl=http://127.0.0.1:8080/
+```
+
+`BuildConfig.USE_REMOTE_API` selects `RemoteSembakoRepository`; network and
+HTTP errors are surfaced as Snackbars. Leave the flag unset to keep using fake
+data.
+
 ## API endpoints
 
 No feature endpoints exist yet; the team will add them. Only Actuator is exposed:

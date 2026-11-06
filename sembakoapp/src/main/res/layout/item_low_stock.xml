@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:gravity="center_vertical"
+  android:orientation="horizontal"
+  android:paddingStart="16dp"
+  android:paddingTop="10dp"
+  android:paddingEnd="16dp"
+  android:paddingBottom="10dp">
+
+  <ImageView
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:contentDescription="@null"
+    android:src="@drawable/ic_warning"
+    app:tint="?attr/colorError" />
+
+  <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/tv_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:textAppearance="?attr/textAppearanceTitleSmall" />
+
+    <TextView
+      android:id="@+id/tv_detail"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textAppearance="?attr/textAppearanceBodySmall"
+      android:textColor="?attr/colorOnSurfaceVariant" />
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/tv_stock"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:textAppearance="?attr/textAppearanceTitleMedium"
+    android:textColor="?attr/colorError" />
+</LinearLayout>

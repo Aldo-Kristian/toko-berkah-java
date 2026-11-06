@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/nav_graph"
+  app:startDestination="@id/dashboardFragment">
+
+  <fragment android:id="@+id/dashboardFragment"
+    android:name="com.example.sembakoapp.ui.dashboard.DashboardFragment"
+    android:label="@string/nav_dashboard" />
+  <fragment android:id="@+id/productsFragment"
+    android:name="com.example.sembakoapp.ui.products.ProductsFragment"
+    android:label="@string/nav_products" />
+  <fragment android:id="@+id/categoriesFragment"
+    android:name="com.example.sembakoapp.ui.categories.CategoriesFragment"
+    android:label="@string/nav_categories" />
+  <fragment android:id="@+id/suppliersFragment"
+    android:name="com.example.sembakoapp.ui.suppliers.SuppliersFragment"
+    android:label="@string/nav_suppliers" />
+</navigation>

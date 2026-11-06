@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="Theme.SembakoApp" parent="Theme.Material3.DayNight.NoActionBar">
+    <item name="colorPrimary">@color/green_100</item>
+    <item name="colorOnPrimary">@color/green_900</item>
+    <item name="colorPrimaryContainer">@color/green_700</item>
+    <item name="colorOnPrimaryContainer">@color/green_50</item>
+
+    <item name="colorSecondary">@color/amber_100</item>
+    <item name="colorOnSecondary">@color/amber_900</item>
+    <item name="colorSecondaryContainer">@color/amber_700</item>
+    <item name="colorOnSecondaryContainer">@color/black</item>
+  </style>
+</resources>

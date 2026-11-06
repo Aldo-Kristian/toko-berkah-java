@@ -7,6 +7,12 @@ val apiBaseUrl =
     .gradleProperty("apiBaseUrl")
     .getOrElse("http://10.0.2.2:8080/")
 
+val useRemoteApi =
+  providers
+    .gradleProperty("useRemoteApi")
+    .map { it.toBoolean() }
+    .getOrElse(false)
+
 android {
   namespace = "com.example.sembakoapp"
   compileSdk = 37
@@ -18,6 +24,7 @@ android {
     versionCode = 1
     versionName = "1.0"
     buildConfigField("String", "API_BASE_URL", "\"$apiBaseUrl\"")
+    buildConfigField("boolean", "USE_REMOTE_API", useRemoteApi.toString())
   }
 
   buildTypes {
@@ -63,4 +70,5 @@ dependencies {
   implementation(libs.okhttp)
 
   testImplementation(libs.junit)
+  testImplementation(libs.mockwebserver)
 }

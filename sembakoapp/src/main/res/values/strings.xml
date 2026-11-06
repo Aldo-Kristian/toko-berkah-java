@@ -1,6 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">Toko Sembako</string>
-  <string name="scaffold_title">Toko Sembako Berkah Jaya</string>
-  <string name="scaffold_hint">Scaffold proyek. Fitur dashboard, produk, kategori, supplier, pencarian, dan peringatan stok akan diimplementasikan oleh tim.</string>
+
+  <string name="nav_dashboard">Dashboard</string>
+  <string name="nav_products">Produk</string>
+  <string name="nav_categories">Kategori</string>
+  <string name="nav_suppliers">Supplier</string>
+
+  <string name="dashboard_title">Ringkasan Toko</string>
+  <string name="dashboard_subtitle">Toko Sembako Berkah Jaya</string>
+  <string name="stat_total_products">Total Produk</string>
+  <string name="stat_low_stock">Stok Menipis</string>
+  <string name="stat_total_categories">Kategori</string>
+  <string name="stat_total_suppliers">Supplier</string>
+  <string name="section_low_stock_title">Peringatan Stok Menipis</string>
+  <string name="low_stock_summary">%1$d produk perlu segera diisi ulang</string>
+  <string name="low_stock_summary_empty">Tidak ada produk dengan stok menipis</string>
+  <string name="low_stock_empty">Semua stok aman. Tidak ada produk yang menipis.</string>
+  <string name="low_stock_row_format">Sisa %1$d %2$s · minimum %3$d</string>
+
+  <string name="products_title">Produk</string>
+  <string name="search_products_hint">Cari produk, kategori, atau supplier</string>
+  <string name="action_filter">Filter</string>
+  <string name="action_add_product">Tambah produk</string>
+  <string name="empty_products_title">Belum ada produk</string>
+  <string name="empty_products_subtitle">Tekan tombol + untuk menambahkan produk pertama.</string>
+  <string name="empty_filter_title">Tidak ada hasil</string>
+  <string name="empty_filter_subtitle">Coba ubah kata kunci atau filter.</string>
+
+  <string name="categories_title">Kategori</string>
+  <string name="action_add_category">Tambah kategori</string>
+  <string name="empty_categories_title">Belum ada kategori</string>
+  <string name="empty_categories_subtitle">Tambahkan kategori agar produk dapat dikelompokkan.</string>
+  <string name="product_count">%1$d produk</string>
+
+  <string name="suppliers_title">Supplier</string>
+  <string name="action_add_supplier">Tambah supplier</string>
+  <string name="empty_suppliers_title">Belum ada supplier</string>
+  <string name="empty_suppliers_subtitle">Tambahkan supplier pemasok barang toko.</string>
+
+  <string name="action_edit">Ubah</string>
+  <string name="action_delete">Hapus</string>
+  <string name="action_save">Simpan</string>
+  <string name="action_apply">Terapkan</string>
+  <string name="action_reset">Reset</string>
+  <string name="options">Opsi</string>
+
+  <string name="dialog_delete_product_title">Hapus produk?</string>
+  <string name="dialog_delete_product_message">Produk \"%1$s\" akan dihapus permanen.</string>
+  <string name="dialog_delete_category_title">Hapus kategori?</string>
+  <string name="dialog_delete_category_message">Kategori \"%1$s\" akan dihapus permanen.</string>
+  <string name="dialog_delete_supplier_title">Hapus supplier?</string>
+  <string name="dialog_delete_supplier_message">Supplier \"%1$s\" akan dihapus permanen.</string>
+  <string name="category_in_use">Kategori masih dipakai oleh %1$d produk.</string>
+  <string name="supplier_in_use">Supplier masih dipakai oleh %1$d produk.</string>
+
+  <string name="form_add_product">Tambah Produk</string>
+  <string name="form_edit_product">Ubah Produk</string>
+  <string name="form_add_category">Tambah Kategori</string>
+  <string name="form_edit_category">Ubah Kategori</string>
+  <string name="form_add_supplier">Tambah Supplier</string>
+  <string name="form_edit_supplier">Ubah Supplier</string>
+  <string name="hint_product_name">Nama produk</string>
+  <string name="hint_category">Kategori</string>
+  <string name="hint_supplier">Supplier</string>
+  <string name="hint_price">Harga (Rp)</string>
+  <string name="hint_unit">Satuan</string>
+  <string name="hint_stock">Stok</string>
+  <string name="hint_min_stock">Stok minimum</string>
+  <string name="hint_category_name">Nama kategori</string>
+  <string name="hint_category_description">Deskripsi (opsional)</string>
+  <string name="hint_supplier_name">Nama supplier</string>
+  <string name="hint_supplier_phone">No. telepon</string>
+  <string name="hint_supplier_address">Alamat</string>
+  <string name="error_required">Wajib diisi</string>
+  <string name="error_invalid_number">Angka tidak valid</string>
+
+  <string name="filter_title">Filter Produk</string>
+  <string name="filter_all_categories">Semua kategori</string>
+  <string name="filter_all_suppliers">Semua supplier</string>
+  <string name="filter_min_stock">Stok minimum</string>
+  <string name="filter_max_stock">Stok maksimum</string>
+
+  <string name="without_category">Tanpa kategori</string>
+  <string name="without_supplier">Tanpa supplier</string>
+  <string name="product_subtitle_format">%1$s • %2$s</string>
+  <string name="stock_format">Stok %1$d %2$s</string>
+  <string name="default_unit">pcs</string>
 </resources>
