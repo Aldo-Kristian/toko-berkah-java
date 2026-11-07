@@ -5,13 +5,13 @@ plugins {
 val apiBaseUrl =
   providers
     .gradleProperty("apiBaseUrl")
-    .getOrElse("http://10.0.2.2:8080/")
+    .getOrElse("http://localhost:8080/")
 
 val useRemoteApi =
   providers
     .gradleProperty("useRemoteApi")
     .map { it.toBoolean() }
-    .getOrElse(false)
+    .getOrElse(true)
 
 android {
   namespace = "com.example.sembakoapp"

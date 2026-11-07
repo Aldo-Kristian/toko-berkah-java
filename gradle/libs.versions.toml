@@ -39,12 +39,14 @@ mockwebserver = { group = "com.squareup.okhttp3", name = "mockwebserver", versio
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 spring-boot-dependencies = { group = "org.springframework.boot", name = "spring-boot-dependencies", version.ref = "springBoot" }
 spring-boot-starter-web = { group = "org.springframework.boot", name = "spring-boot-starter-web" }
-spring-boot-starter-jdbc = { group = "org.springframework.boot", name = "spring-boot-starter-jdbc" }
+spring-boot-starter-jdbc = { group = "org.springframework.boot", name = "spring-boot-starter-data-jdbc" }
 spring-boot-starter-actuator = { group = "org.springframework.boot", name = "spring-boot-starter-actuator" }
 spring-boot-starter-validation = { group = "org.springframework.boot", name = "spring-boot-starter-validation" }
 spring-boot-starter-test = { group = "org.springframework.boot", name = "spring-boot-starter-test" }
 sqlite-jdbc = { group = "org.xerial", name = "sqlite-jdbc", version.ref = "sqlite" }
+arconia-data-jdbc-sqlite = { group = "io.arconia", name = "arconia-data-jdbc-sqlite", version = "0.32.0" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 spring-boot = { id = "org.springframework.boot", version.ref = "springBoot" }
+
